@@ -1,0 +1,22 @@
+version: 2
+
+seeds:
+  - name: credit_card_transactions
+    description: "Synthetic credit-card transactions used for portfolio analytics training."
+
+    columns:
+      - name: transaction_id
+        description: "Unique identifier for each transaction."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: account_id
+        description: "Credit-card account identifier."
+        data_tests:
+          - not_null
+
+      - name: transaction_amount
+        description: "Purchase amount in USD."
+        data_tests:
+          - not_null

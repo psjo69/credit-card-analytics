@@ -1,0 +1,32 @@
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# DuckDB local databases
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp/
+
+# Python environments and cache
+.venv/
+__pycache__/
+*.pyc
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+profiles.yml
+*.pem
+*.key
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary and backup files
+*.bak
+*.tmp
